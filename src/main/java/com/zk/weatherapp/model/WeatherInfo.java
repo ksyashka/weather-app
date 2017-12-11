@@ -2,24 +2,21 @@ package com.zk.weatherapp.model;
 
 public class WeatherInfo {
 
-    private int id;
-
-    private String city;
     private Double temp;
     private Integer pressure;
     private Integer humidity;
-    private Double tempMin;
-    private Double tempMax;
+    private Double temp_min;
+    private Double temp_max;
 
     public WeatherInfo() {
     }
 
-    public WeatherInfo(Double temp, Integer pressure, Integer humidity, Double tempMin, Double tempMax) {
+    public WeatherInfo(Double temp, Integer pressure, Integer humidity, Double temp_min, Double temp_max) {
         this.temp = temp;
         this.pressure = pressure;
         this.humidity = humidity;
-        this.tempMin = tempMin;
-        this.tempMax = tempMax;
+        this.temp_min = temp_min;
+        this.temp_max = temp_max;
     }
 
     public Double getTemp() {
@@ -46,29 +43,19 @@ public class WeatherInfo {
         this.humidity = humidity;
     }
 
-    public Double getTempMin() {
-        return tempMin;
+    public Double getTemp_min() {
+        return temp_min;
     }
 
-    public void setTempMin(Double tempMin) {
-        this.tempMin = tempMin;
+    public void setTemp_min(Double temp_min) {
+        this.temp_min = temp_min;
     }
 
-    public Double getTempMax() {
-        return tempMax;
+    public Double getTemp_max() {
+        return temp_max;
     }
 
-    public void setTempMax(Double tempMax) {
-        this.tempMax = tempMax;
+    public void setTemp_max(Double temp_max) {
+        this.temp_max = temp_max;
     }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-
 }
